@@ -1,0 +1,13 @@
+<section id="items" class="container-fluid" ng-controller="ListController as listCtrl">
+  <form name="add-item" id="add-item">
+    <input id="search" type="text" placeholder="Filter for..." ng-model="myfilter.str">
+  </form>
+
+  <div class="row">
+
+    <div class="col-sm-6 col-md-6 col-lg-4" ng-repeat="item in listCtrl.items | filter:myfilter.str">
+      <item question="{{item.question}}"></item>
+    </div>
+
+  </div>
+</section>

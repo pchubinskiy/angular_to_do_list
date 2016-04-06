@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NowAndLater">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NowAndLater</title>
+        <link rel="stylesheet" href="//cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+        <script src="/javascripts/app.js"></script>
+        <script src="/javascripts/listController.js"></script>
+        <script src="/javascripts/itemView.js"></script>
+    </head>
+    <body>
+      <div class="container" ng-controller="ListController as listCtrl">
+        <header class="navbar">
+          <h1 class="pull-left">Now and Later</h1>
+        </header>
+
+        <nav class="tabs">
+          <a ui-sref-active="active" ui-sref="home">Home</a>
+          <a ui-sref-active="active" ui-sref="new">Add New</a>
+          <a ui-sref-active="active" ui-sref="about">About</a>
+        </nav>
+
+        <div ui-view></div>
+
+      <footer>
+        <p>© 2016 Paul Chubinskiy</p>
+      </footer>
+      </div>
+    </body>
+</html>

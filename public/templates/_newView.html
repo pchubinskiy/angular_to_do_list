@@ -1,0 +1,13 @@
+<section class="container-fluid">
+  <div class="row">
+    <form name="add-item" id="add-item" ng-submit="listCtrl.addItem()">
+      <input type="text" name="question" id="question" placeholder="What do you need to do?" ng-model="listCtrl.newItem.question">
+    </form>
+    <br>
+    <div class="item">
+      <h4 class="item-title">{{ listCtrl.newItem.question }}</h4>
+      <h6>Now and Later</h6>
+    </div>
+  </div>
+
+</section>
