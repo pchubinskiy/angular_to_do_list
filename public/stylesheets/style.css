@@ -43,6 +43,7 @@ h1:after, .item h6:after {
   min-height: 16rem;
   position: relative;
   max-width: 300px;
+  margin-bottom: 20px;
 }
 
 .item h6 {
