@@ -17,12 +17,18 @@
 
     });
 
-    // this.cards = [
-    //  { thingToDo: 'I couldn\'t complete my assignment because ________' },
-    //  { thingToDo: 'I get by with a little help from ________' },
-    //  { thingToDo: 'The field trip was completely ruined by ________' },
-    //  { thingToDo: 'Kyle is a ________' },
-    //  { thingToDo: 'What is my secret power?' }
+    // this.items = [
+    //  { thingToDo: 'Ask my parents the same question' },
+    //  { thingToDo: 'Go through sticky notes' },
+    //  { thingToDo: 'Find Waldo' },
+    //  { thingToDo: 'Check engine oil' }
+    // ];
+
+    // self.items = [
+    //  { question: 'Ask my parents the same question' },
+    //  { question: 'Go through sticky notes' },
+    //  { question: 'Find Waldo' },
+    //  { question: 'Check engine oil' }
     // ];
 
     this.addItem = function() {
