@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+
+/* COLOR SCHEME */
+
+#search {
+  margin-bottom: 20px;
+  /*border-style: solid;
+  border-width: 2px;
+  border-radius: 6px;
+  border-color: lightblue*/
+}
+
+a {
+  color: #337ab7;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  color: #A94242;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+h3.text-muted {
+  color: black;
+}
+
+.jumbotron {
+  background-color: #337ab7;
+}
+
+.btn-lg {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.btn-lg:hover {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.nav-pills>li.active>a {
+  background-color: #337ab7;
+}
+
+

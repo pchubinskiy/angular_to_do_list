@@ -8,7 +8,7 @@
     directive.replace = true;
     directive.templateUrl =  "/templates/_itemView.html";
     directive.scope = {
-      question: '@'
+      thingtodo: '@'
     };
 
     return directive;

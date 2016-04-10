@@ -11,7 +11,7 @@ var users = require('./routes/users');
 var app = express();
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.DB_TO_DO_LIST);
+mongoose.connect(process.env.DB_TO_DO_LIST_COPY);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

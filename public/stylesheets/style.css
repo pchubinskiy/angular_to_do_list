@@ -35,12 +35,12 @@ h1:after, .item h6:after {
 }
 
 .item {
-  background: #231e1e;
+  background: white; /*#231e1e*/
   border-color: black;
   border-radius: 5px;
-  color: white;
+  color: black; /*white*/
   padding: 1rem;
-  min-height: 16rem;
+  /*min-height: 16rem;*/
   position: relative;
   max-width: 300px;
   margin-bottom: 20px;

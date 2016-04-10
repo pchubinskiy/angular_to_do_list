@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 var itemSchema = new mongoose.Schema({
-  question: { type: String, required: true },
-  created_at: Date,
-  updated_at: Date
+  thingToDo: { type: String, required: true },
+  createdAt: Date,
+  updatedAt: Date
 });
 
 var Item = mongoose.model('Item', itemSchema);

@@ -2,7 +2,7 @@
   var app = angular.module('NowAndLater');
 
   app.controller('ListController', function($http) {
-    this.newItem = { question: '' };
+    this.newItem = { thingToDo: '' };
 
     var self = this;
 
@@ -14,7 +14,7 @@
 
       self.items = response.data;
     }, function errorCallback(response) {
-
+      console.log('error', response);
     });
 
     // this.items = [
@@ -38,20 +38,37 @@
         method: 'POST',
         url: '/items',
         data: {
-          question: self.newItem.question
+          thingToDo: self.newItem.thingToDo
         }
       }).then(function successCallback(response) {
+        console.log('success', response);
 
         self.items.push({
-          question: self.newItem.question
+          thingToDo: self.newItem.thingToDo
         });
 
       }, function errorCallback(response) {
           console.log('error', response);
       });
 
-      this.newItem.question = '';
+      this.newItem.thingToDo = '';
     };
+
+    this.deleteItem = function() {
+      var self = this;
+
+      $http({
+        method: 'DELETE',
+        url: '/items',
+        data: {
+          thingToDelete: self.item.thingToDelete
+        }
+      }).then(function successCallback(response) {
+        console.log('success', response);
+      }, function errorCallback(response) {
+        console.log('error', response);
+      });
+    }
 
     return this;
   });

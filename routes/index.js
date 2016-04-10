@@ -16,18 +16,28 @@ router.get('/items', function(req, res, next) {
 });
 
 router.post('/items', function(req, res, next) {
-  var question = req.body.question;
+  var thingToDo = req.body.thingToDo;
 
   var newItem = Item({
-      question: question
+      thingToDo: thingToDo
   });
 
-  // Save the card
+  // Save the item
   newItem.save(function(err) {
       if (err) console.log(err);
 
       res.send('Item created!');
   });
+});
+
+router.delete('/items', function(req, res, next) {
+  var thingToDelete = req.body.thingToDelete;
+
+  Item.find({}, function(err, item) {
+    if (err) console.log(err);
+
+    res.send('Item deleted!');
+  })
 });
 
 module.exports = router;
