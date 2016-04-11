@@ -61,7 +61,7 @@
         method: 'DELETE',
         url: '/items',
         data: {
-          thingToDelete: self.item.thingToDelete
+          thingToDelete: self.checked.thingtodo
         }
       }).then(function successCallback(response) {
         console.log('success', response);
