@@ -17,20 +17,6 @@
       console.log('error', response);
     });
 
-    // this.items = [
-    //  { thingToDo: 'Ask my parents the same question' },
-    //  { thingToDo: 'Go through sticky notes' },
-    //  { thingToDo: 'Find Waldo' },
-    //  { thingToDo: 'Check engine oil' }
-    // ];
-
-    // self.items = [
-    //  { question: 'Ask my parents the same question' },
-    //  { question: 'Go through sticky notes' },
-    //  { question: 'Find Waldo' },
-    //  { question: 'Check engine oil' }
-    // ];
-
     this.addItem = function() {
       var self = this;
 
